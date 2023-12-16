@@ -1,0 +1,20 @@
+# environment.yaml
+
+# create the custom conda env using the command below from the anaconda terminal
+# conda env create --file environment.yaml
+
+name: causal_env
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.8
+  - anaconda
+  - tensorflow=2.15
+  - pandas
+  - ipykernel
+  - pip
+  - pip:
+    - tensorflow_probability==0.22
+    - numpy==1.23.5
+    - tfcausalimpact==0.0.12
+    - tslearn==0.6.3
